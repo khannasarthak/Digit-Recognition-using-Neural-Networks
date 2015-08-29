@@ -1,0 +1,16 @@
+%Defining inputs here
+x = [1,1;-1,1;1,-1;-1,-1];
+
+%Definig known output
+t = [1,-1,-1,-1];
+
+%learning rate
+alpha = 1;
+
+% initial weights
+w = [0,0];
+i=0;
+while y!=t
+    
+    net_in = 
+
