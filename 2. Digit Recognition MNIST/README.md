@@ -8,11 +8,11 @@
 
  Shortcomings in this version:
 
- 7 it always displays 2
- 9 it displays 2,3
- 1 if displays 1 only if the line drawn is in the center, other wise it oftern shows 8 or 3
- 4 if displays correctly only if 4 is written towards the upper right of the 28x28 matrix
- 8,5,2,0 are shown correct if legible
+ -7 it always displays 2
+ -9 it displays 2,3
+ -1 if displays 1 only if the line drawn is in the center, other wise it oftern shows 8 or 3
+ -4 if displays correctly only if 4 is written towards the upper right of the 28x28 matrix
+ -8,5,2,0 are shown correct if legible
 
 
 
