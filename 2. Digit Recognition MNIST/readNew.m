@@ -5,9 +5,9 @@ hiddenWeights = dlmread('hiddenW.txt');
 outputWeights = dlmread('outputW.txt');
 
 
-k = imread(imageFile)
-x  = reshape(k,784,1)
-inputVector = 1-double(x)/255
+k = imread(imageFile) %28x28 matrix
+x  = reshape(k,784,1) %converting to 784x1
+inputVector = 1-double(x)/255 % reducing values to 0-1 range, 0- white, 1- black
 
 
 

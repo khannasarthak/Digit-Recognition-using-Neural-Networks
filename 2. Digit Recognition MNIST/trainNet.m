@@ -23,6 +23,7 @@ for i=1:epochs
         
         
         n(j) = floor(rand(1)*trainSetSize + 1); % choosing inputVector
+        %n(j) = j;
         
             inputVector = inputValues(:, n(j));
             hiddenActualInput = hiddenWeights*inputVector; % zin
@@ -33,7 +34,7 @@ for i=1:epochs
             
             targetVector = targetValues(:, n(j));
             
-            % Backpropagate the errors.
+            % Backpropagating the errors.
             outputDelta = dactivation(outputActualInput).*(outputVector - targetVector) % (tk-yk)*f'(yin)
             hiddenDelta = dactivation(hiddenActualInput).*(outputWeights'*outputDelta)  % del*w*f'(zin)
             
