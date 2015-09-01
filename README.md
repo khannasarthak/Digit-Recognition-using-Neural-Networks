@@ -7,11 +7,10 @@ Version 1 ( 31st August 2015) [ training done on a batch of 100 with 500 epochs]
 
 ###Shortcomings in this version:
 
-- 7 it always displays 2
-- 9 it displays 2,3
-- 1 if displays 1 only if the line drawn is in the center, other wise it often shows 8 or 3
-- 4 if displays correctly only if 4 is written towards the upper right of the 28x28 matrix
-- 8,5,2,0 are shown correct if legible
+- 7 is always displays 2
+- 9 is displayed as 2 or 3
+
+Correctly recognizes 1,2,3,4,5,6,8,0. This can be imporved by increaing batchSize and the number of Epochs
 
  THe results are better if we increase the batchSIze and the number of epochs, which resulted in only the number 7 not being recognised correctly.
 
