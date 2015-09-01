@@ -6,26 +6,26 @@ Version 1 ( 31st August 2015) [ training done on a batch of 100 with 500 epochs]
 
 ###Shortcomings in this version:
 
--7 it always displays 2
--9 it displays 2,3
--1 if displays 1 only if the line drawn is in the center, other wise it often shows 8 or 3
--4 if displays correctly only if 4 is written towards the upper right of the 28x28 matrix
--8,5,2,0 are shown correct if legible
+- 7 it always displays 2
+- 9 it displays 2,3
+- 1 if displays 1 only if the line drawn is in the center, other wise it often shows 8 or 3
+- 4 if displays correctly only if 4 is written towards the upper right of the 28x28 matrix
+- 8,5,2,0 are shown correct if legible
 
  THe results are better if we increase the batchSIze and the number of epochs, which resulted in only the number 7 not being recognised correctly.
 
-###Functions explained:
+  ###Functions explained:
 
-####main.m
+  ####main.m
 
- The main function, does the following:
-- loads the MNIST training images and labels ( using helper functions)
-- initialises the number of hidden Units, batch size and learning rate alpha
-- calls the function to train the net [trainNet]
-- writes the hidden and output variables to a text file as CSV's
-- loads the MNIST validation images and labels
-- compares the output from our training set and the validation set
-- tells the number of correctly classified images and the errors
+  The main function, does the following:
+  - loads the MNIST training images and labels ( using helper functions)
+  - initialises the number of hidden Units, batch size and learning rate alpha
+  - calls the function to train the net [trainNet]
+  - writes the hidden and output variables to a text file as CSV's
+  - loads the MNIST validation images and labels
+  - compares the output from our training set and the validation set
+  - tells the number of correctly classified images and the errors
 
   ####sigmoid.m
 
