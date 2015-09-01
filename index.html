@@ -1,34 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Digit-recognition-using-neural-networks by khannasarthak</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+    <title>Digit-recognition-using-neural-networks by khannasarthak</title>
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
+    <header>
+      <div class="inner">
         <h1>Digit-recognition-using-neural-networks</h1>
-        <p>Recognize handwritten digits using neural networks.</p>
+        <h2>Recognize handwritten digits using neural networks.</h2>
+        <a href="https://github.com/khannasarthak/Digit-Recognition-using-Neural-Networks" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
 
-        <p class="view"><a href="https://github.com/khannasarthak/Digit-Recognition-using-Neural-Networks">View the Project on GitHub <small>khannasarthak/Digit-Recognition-using-Neural-Networks</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/khannasarthak/Digit-Recognition-using-Neural-Networks/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/khannasarthak/Digit-Recognition-using-Neural-Networks/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/khannasarthak/Digit-Recognition-using-Neural-Networks">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h1>
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
 <a id="neural-network-to-recognize-digits" class="anchor" href="#neural-network-to-recognize-digits" aria-hidden="true"><span class="octicon octicon-link"></span></a>Neural-Network to recognize digits</h1>
 
 <h3>
@@ -52,11 +52,11 @@
 
 <p>THe results are better if we increase the batchSIze and the number of epochs, which resulted in only the number 7 not being recognised correctly.</p>
 
-<h3>
-<a id="functions-explained" class="anchor" href="#functions-explained" aria-hidden="true"><span class="octicon octicon-link"></span></a>Functions explained:</h3>
+<h2>
+<a id="functions-explained" class="anchor" href="#functions-explained" aria-hidden="true"><span class="octicon octicon-link"></span></a>Functions explained:</h2>
 
-<h4>
-<a id="mainm" class="anchor" href="#mainm" aria-hidden="true"><span class="octicon octicon-link"></span></a>main.m</h4>
+<h3>
+<a id="mainm" class="anchor" href="#mainm" aria-hidden="true"><span class="octicon octicon-link"></span></a>main.m</h3>
 
 <p>The main function, does the following:</p>
 
@@ -70,18 +70,18 @@
 <li>tells the number of correctly classified images and the errors</li>
 </ul>
 
-<h4>
-<a id="sigmoidm" class="anchor" href="#sigmoidm" aria-hidden="true"><span class="octicon octicon-link"></span></a>sigmoid.m</h4>
+<h3>
+<a id="sigmoidm" class="anchor" href="#sigmoidm" aria-hidden="true"><span class="octicon octicon-link"></span></a>sigmoid.m</h3>
 
 <p>Returns the logistic sigmoid of the input, done element by element</p>
 
-<h4>
-<a id="dsigmoidm" class="anchor" href="#dsigmoidm" aria-hidden="true"><span class="octicon octicon-link"></span></a>dsigmoid.m</h4>
+<h3>
+<a id="dsigmoidm" class="anchor" href="#dsigmoidm" aria-hidden="true"><span class="octicon octicon-link"></span></a>dsigmoid.m</h3>
 
 <p>Returns the derivative of logistic sigmoid to use in Back Propagation</p>
 
-<h4>
-<a id="trainnetm" class="anchor" href="#trainnetm" aria-hidden="true"><span class="octicon octicon-link"></span></a>trainNet.m</h4>
+<h3>
+<a id="trainnetm" class="anchor" href="#trainnetm" aria-hidden="true"><span class="octicon octicon-link"></span></a>trainNet.m</h3>
 
 <p>Trains our neural net using Back Propogation and also using Batch training.</p>
 
@@ -95,8 +95,8 @@ Epochs are the number of times the above procedure is repeated, generally, the m
 <li>plots the Mean Square Error rate with respect to number of epochs</li>
 </ul>
 
-<h4>
-<a id="validationm" class="anchor" href="#validationm" aria-hidden="true"><span class="octicon octicon-link"></span></a>validation.m</h4>
+<h3>
+<a id="validationm" class="anchor" href="#validationm" aria-hidden="true"><span class="octicon octicon-link"></span></a>validation.m</h3>
 
 <p>It validates on the MNIST validation set. Does the folloing:</p>
 
@@ -105,8 +105,8 @@ Epochs are the number of times the above procedure is repeated, generally, the m
 <li>gives the output as the class ( i.e the number that is written)</li>
 </ul>
 
-<h4>
-<a id="readnewm" class="anchor" href="#readnewm" aria-hidden="true"><span class="octicon octicon-link"></span></a>readNew.m</h4>
+<h3>
+<a id="readnewm" class="anchor" href="#readnewm" aria-hidden="true"><span class="octicon octicon-link"></span></a>readNew.m</h3>
 
 <p>Takes in a 28x28 pixel grayscale image and classifies it as which number it is. Does the following:</p>
 
@@ -121,14 +121,26 @@ Epochs are the number of times the above procedure is repeated, generally, the m
 <p>References : (<a href="http://davidstutz.de/recognizing-handwritten-digits-mnist-dataset-twolayer-perceptron/">http://davidstutz.de/recognizing-handwritten-digits-mnist-dataset-twolayer-perceptron/</a>)</p>
 </li>
 </ul>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/khannasarthak">khannasarthak</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/khannasarthak/Digit-Recognition-using-Neural-Networks/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/khannasarthak/Digit-Recognition-using-Neural-Networks/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/khannasarthak/Digit-Recognition-using-Neural-Networks"></a> is maintained by <a href="https://github.com/khannasarthak">khannasarthak</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-              <script type="text/javascript">
+
+            <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
