@@ -14,9 +14,9 @@ Version 1 ( 31st August 2015) [ training done on a batch of 100 with 500 epochs]
 
  THe results are better if we increase the batchSIze and the number of epochs, which resulted in only the number 7 not being recognised correctly.
 
-  ###Functions explained:
+###Functions explained:
 
-  ####main.m
+####main.m
 
  The main function, does the following:
 - loads the MNIST training images and labels ( using helper functions)
