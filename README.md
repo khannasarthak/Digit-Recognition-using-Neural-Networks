@@ -2,7 +2,7 @@
 ###Training a net to recognize handwritten digits using MNIST training date
 Version 1 ( 31st August 2015) [ training done on a batch of 100 with 500 epochs]
 
-## This code is free to use. If you are using this code kindly cite my [github](https://github.com/khannasarthak) and [linkedin](https://www.linkedin.com/in/sarthakkhanna) profiles in the references. 
+## This code is free to use. If you are using this code kindly cite my [github](https://github.com/khannasarthak) and [linkedin](https://www.linkedin.com/in/sarthakkhanna) profiles in the references.
 
 
 ###Shortcomings in this version:
@@ -15,9 +15,9 @@ Version 1 ( 31st August 2015) [ training done on a batch of 100 with 500 epochs]
 
  THe results are better if we increase the batchSIze and the number of epochs, which resulted in only the number 7 not being recognised correctly.
 
-  ###Functions explained:
+  ##Functions explained:
 
-  ####main.m
+  ###main.m
 
   The main function, does the following:
   - loads the MNIST training images and labels ( using helper functions)
@@ -28,15 +28,15 @@ Version 1 ( 31st August 2015) [ training done on a batch of 100 with 500 epochs]
   - compares the output from our training set and the validation set
   - tells the number of correctly classified images and the errors
 
-  ####sigmoid.m
+  ###sigmoid.m
 
   Returns the logistic sigmoid of the input, done element by element
 
-  ####dsigmoid.m
+  ###dsigmoid.m
 
   Returns the derivative of logistic sigmoid to use in Back Propagation
 
-  ####trainNet.m
+  ###trainNet.m
 
   Trains our neural net using Back Propogation and also using Batch training.
 
@@ -47,13 +47,13 @@ Version 1 ( 31st August 2015) [ training done on a batch of 100 with 500 epochs]
   - implement batchwise backpropogation and generates weights
   - plots the Mean Square Error rate with respect to number of epochs
 
-  ####validation.m
+  ###validation.m
 
   It validates on the MNIST validation set. Does the folloing:
   - using the weights learned in trainNet.m, it predicts the validation set
   - gives the output as the class ( i.e the number that is written)
 
-  ####readNew.m
+  ###readNew.m
 
   Takes in a 28x28 pixel grayscale image and classifies it as which number it is. Does the following:
   - reads image
