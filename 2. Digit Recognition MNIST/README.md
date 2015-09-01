@@ -1,6 +1,9 @@
 # Neural-Network -> Training a net to recognize handwritten digits using MNIST training date
 Version 1 ( 31st August 2015) [ training done on a batch of 100 with 500 epochs]
 
+## This code is free to use.kindly cite my (github)[https://github.com/khannasarthak] and (linkedin)[https://www.linkedin.com/in/sarthakkhanna] profiles in the references. 
+
+
 ###Shortcomings in this version:
 
 -7 it always displays 2
